@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 {% block content %}
 <h1>Choose Survey!</h1>
-<form action="/begin">
+<form action="/begin" method='POST'>
     <section value='{{survey.title}}'>
     <h3 name='survey_id'>{{survey.title}}</h3>
         <p>{{survey.instructions}}</p>
